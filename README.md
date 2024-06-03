@@ -16,7 +16,7 @@ This script requires a folder with the following structure, where run_[n] refers
 - individual_n
 ```
 ### stimulatedNerveAnalysis.py
-This script analyse batches of matlab files and collates data. The output [foldername]_spline-peak-stats.txt contains various parameters extracted from splines. The script generates plots that were used to curate the stats files and remove data from erroneously fit splines. This script requires a folder with the following structure, where [direction]\_[stimulus]_laser.mat is averaged LDV data, [direction]\_[stimulus]_nerve_DC.mat is highpass nerve data, [direction]\_[stimulus]_nerve_SMOOTH.mat is lowpass nerve data and [direction]\_[stimulus]_stim.mat is the stimulus provided:
+This script analyse batches of matlab files and collates data. The output [foldername]_spline-peak-stats.txt contains various parameters extracted from splines. The script generates plots that were used to curate the stats files and remove data from erroneously fit splines. This script requires a folder with the following structure, where [direction]\_[stimulus]_laser.mat is LDV data, [direction]\_[stimulus]_nerve_DC.mat is highpass nerve data, [direction]\_[stimulus]_nerve_SMOOTH.mat is lowpass nerve data and [direction]\_[stimulus]_stim.mat is the stimulus provided:
 ```
 - individual_1
   - before
