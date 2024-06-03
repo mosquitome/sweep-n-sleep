@@ -13,13 +13,5 @@ This script requires a folder with the following structure:
     - epoch_2
     - epoch_n
 - individual_2
-  - fileSplitter_before
-    - epoch_1
-    - epoch_2
-    - epoch_n
-  - fileSplitter_after
-    - epoch_1
-    - epoch_2
-    - epoch_n
 - individual_n
 ```
