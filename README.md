@@ -16,4 +16,4 @@ This script requires a folder with the following structure, where run_[n] refers
 - individual_n
 ```
 ### stimulatedNerveAnalysis.py
-This script analyse batches of matlab files and collates data. The output [foldername]_spline-peak-stats.txt contains various parameters extracted from splines. The script generates plots that were used to guide annotation of the stats files and removal of erroneous files. This script requires a folder with the folowing structure:
+This script analyse batches of matlab files and collates data. The output [foldername]_spline-peak-stats.txt contains various parameters extracted from splines. The script generates plots that were used to curate the stats files and remove data from erroneously fit splines. This script requires a folder with the following structure:
