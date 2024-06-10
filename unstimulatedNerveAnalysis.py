@@ -1,22 +1,31 @@
+'''
+
+#---------------------------------------------------------------------------------
+#              U N S T I M U L A T E D   N E R V E   A N A L Y S I S
+#---------------------------------------------------------------------------------
+
+# batch analysis of nerve data during periods of rest.
+
+# Author        :   David A. Ellis <https://github.com/mosquitome/>
+# Organisation  :   University College London
+
+# This script will generate two files: 
+    
+    spikes      : contains information on real spikes above threshold.
+    spikes_sim  : contains information on simulated spikes (requires real data)
+
+# Notes         : Below, set the sample rate (fs) and the peak threshold in standard deviations 
+                  (threshold).
+
+#---------------------------------------------------------------------------------
+
+'''
+
 import pandas as pd
 import numpy as np
 import os
 import pathlib as pl
 import scipy.signal as ss
-
-#==============================================================================
-
-'''
-This script will generate two files: 
-    
-    spikes      : contains information on real spikes above threshold.
-    spikes_sim  : contains information on simulated spikes (requires real data)
-
-Below, set the sample rate (fs) and the peak threshold in standard deviations 
-(threshold).
-'''
-
-# get spike count for each epoch (works well with threshold of 3, even better with 4, 5 similar to 4 but reduces wt npeaks)
 
 fs = 20000 # <- nerve sample rate
 threshold = 5 # <- number of standard deviations a peak needs to be from the baseline in order to be counted as a spike
